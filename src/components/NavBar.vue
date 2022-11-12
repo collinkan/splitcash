@@ -1,11 +1,23 @@
 <template>
-    <div class="navbar-container">
-        $plit Cash
+    <div>
+        <div class="navbar-container">
+            <Button icon="pi pi-bars" class="button p-button-rounded p-button-text" @click="visibleLeft=true" />
+            <Button label="$plit Cash" class="title p-button-rounded p-button-text" @click="$router.push('/')" />
+            <Button icon="pi pi-user" class="avatar p-button-rounded p-button-outlined" @click="$router.push('/profile')" />
+        </div>
+        <Sidebar class="side-menu" v-model:visible="visibleLeft">
+            <h3>$plit Cash</h3>
+        </Sidebar>
     </div>
 </template>
 
 <script lang="ts">
 export default{
+    data() {
+        return {
+            visibleLeft: false,
+        }
+    },
 }
 </script>
 
@@ -22,10 +34,20 @@ export default{
     user-select: none;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
-    background-color: aquamarine;
+    background-color: rgb(7,20,38);
 }
-
+.title{
+    font-size: 4.5vh;
+    letter-spacing: 0.75em;
+}
+.button{
+    margin-left: 2vh;
+    text-align: center;
+}
+.avatar{
+    margin-right: 2vh;
+}
 </style>
