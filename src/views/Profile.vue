@@ -1,7 +1,6 @@
 <template>
     <div >
       <NavBar/>
-      Profile
     </div>
 </template>
 
