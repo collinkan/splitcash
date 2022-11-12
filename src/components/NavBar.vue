@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="navbar-container">
-            <Button icon="pi pi-bars" class="button p-button-rounded p-button-text" @click="visibleLeft=true" />
-            <Button label="$plit Cash" class="title p-button-rounded p-button-text" @click="$router.push('/')" />
-            <Button icon="pi pi-user" class="avatar p-button-rounded p-button-outlined" @click="$router.push('/profile')" />
+            <Button icon="pi pi-bars" class="button p-button-text" @click="visibleLeft=true" />
+            <Button label="$plit Cash" class="title p-button-text" @click="$router.push('/')" />
+            <Button icon="pi pi-user" class="avatar p-button-rounded p-button-raised p-button-text" @click="$router.push('/profile')" />
         </div>
         <Sidebar class="side-menu" v-model:visible="visibleLeft">
             <h3>$plit Cash</h3>
@@ -26,6 +26,7 @@ export default{
     z-index: 1;
     width: 100%;
     height: 10vh;
+    position: fixed; 
 
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -40,8 +41,9 @@ export default{
     background-color: rgb(7,20,38);
 }
 .title{
-    font-size: 4.5vh;
-    letter-spacing: 0.75em;
+    font-size: 2.5vmax;
+    font-style: italic;
+    letter-spacing: 1.5vmax;
 }
 .button{
     margin-left: 2vh;

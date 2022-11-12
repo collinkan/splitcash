@@ -9,6 +9,7 @@ import 'primeicons/primeicons.css';
 import Button from 'primevue/button'
 import Sidebar from 'primevue/sidebar'
 import Avatar from 'primevue/avatar'
+import Menubar from 'primevue/menubar'
 
 const app = createApp(App)
 app
@@ -19,3 +20,4 @@ app
 app.component('Button', Button)
 app.component('Sidebar', Sidebar)
 app.component('Avatar', Avatar)
+app.component('MenuBar', Menubar)

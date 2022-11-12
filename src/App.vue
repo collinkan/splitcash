@@ -8,4 +8,14 @@ body{
   background-color: rgb(4, 13, 25);
   margin: 0 !important; 
 }
+
+html {
+    font-size: 1.2vmax;
+}
+
+@media all and (max-width: 700px){
+  html {
+      font-size: 2.5vmax;
+  }
+}
 </style>
