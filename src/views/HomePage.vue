@@ -10,8 +10,8 @@ import NavBar from '@/components/NavBar.vue'; // @ is an alias to /src
 
 @Options({
   components: {
-    NavBar,
+      NavBar,
   },
 })
-export default class Home extends Vue {}
+export default class HomePage extends Vue {}
 </script>
