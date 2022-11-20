@@ -6,6 +6,7 @@
 
 body{
   background-color: rgb(4, 13, 25);
+  padding-top: 10vh;
   margin: 0 !important; 
 }
 
