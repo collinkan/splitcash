@@ -3,7 +3,7 @@
         <div class="navbar-container">
             <Button icon="pi pi-bars" class="button p-button-text" @click="visibleLeft=true" />
             <Button label="$plit Cash" class="title p-button-text" @click="$router.push('/')" />
-            <Button icon="pi pi-user" class="avatar p-button-rounded p-button-raised p-button-text" @click="$router.push('/profile')" />
+            <Button icon="pi pi-user" class="avatar p-button-rounded p-button-raised p-button-text" @click="$router.push('/login')" />
         </div>
         <Sidebar class="side-menu" v-model:visible="visibleLeft">
             <h3>$plit Cash</h3>

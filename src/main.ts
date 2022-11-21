@@ -16,6 +16,7 @@ import ConfirmationService from 'primevue/confirmationservice'
 import ConfirmDialog from 'primevue/confirmdialog'
 import ToastService from 'primevue/toastservice'
 import Toast from 'primevue/toast'
+import Dropdown from 'primevue/dropdown';
 
 const app = createApp(App)
 app
@@ -33,3 +34,4 @@ app.component('InputText', InputText)
 app.component('InputNumber', InputNumber)
 app.component('ConfirmDialog', ConfirmDialog)
 app.component('Toast', Toast)
+app.component('Dropdown', Dropdown)
